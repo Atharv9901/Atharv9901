@@ -1,0 +1,29 @@
+const int DCMOTORE1=13;
+const int DCMOTORA1=12;
+const int DCMOTORB1=11;      
+void setup()
+{
+  pinMode(DCMOTORE1,OUTPUT);
+  pinMode(DCMOTORA1,OUTPUT);
+  pinMode(DCMOTORB1,OUTPUT);
+}
+void loop()
+{
+ digitalWrite(DCMOTORE1,HIGH);//FORWARD
+ digitalWrite(DCMOTORA1,HIGH);
+ digitalWrite(DCMOTORB1,LOW); 
+ delay(5000);
+ digitalWrite(DCMOTORE1,LOW);//STOP
+ digitalWrite(DCMOTORA1,LOW);
+ digitalWrite(DCMOTORB1,LOW); 
+ delay(3000);
+ digitalWrite(DCMOTORE1,HIGH);//REVERSE
+ digitalWrite(DCMOTORA1,LOW);
+ digitalWrite(DCMOTORB1,HIGH); 
+ delay(5000);
+ digitalWrite(DCMOTORE1,LOW);//STOP
+ digitalWrite(DCMOTORA1,LOW);
+ digitalWrite(DCMOTORB1,LOW); 
+ delay(3000);
+}
+

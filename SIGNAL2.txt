@@ -1,0 +1,89 @@
+const int LEDAR=13;
+const int LEDAG=12;
+const int LEDAY=11;
+const int LEDBR=10;
+const int LEDBG=9;
+const int LEDBY=8;
+const int LEDCR=7;
+const int LEDCG=6;
+const int LEDCY=5;
+const int LEDDR=4;
+const int LEDDG=3;
+const int LEDDY=2;
+void setup() 
+{
+  pinMode(LEDAR,OUTPUT);
+  pinMode(LEDAG,OUTPUT);
+  pinMode(LEDAY,OUTPUT);
+  pinMode(LEDBR,OUTPUT);
+  pinMode(LEDBG,OUTPUT);
+  pinMode(LEDBY,OUTPUT);
+  pinMode(LEDCR,OUTPUT);
+  pinMode(LEDCG,OUTPUT);
+  pinMode(LEDCY,OUTPUT);
+  pinMode(LEDDR,OUTPUT);
+  pinMode(LEDDG,OUTPUT);
+  pinMode(LEDDY,OUTPUT);
+  delay(2000);
+  digitalWrite(LEDAY,LOW);
+  digitalWrite(LEDBY,LOW);
+  digitalWrite(LEDCY,LOW);
+  digitalWrite(LEDDY,LOW);
+}
+void loop()
+{
+  digitalWrite(LEDAG,HIGH);
+  digitalWrite(LEDBR,HIGH);   //1.
+  digitalWrite(LEDCR,HIGH);
+  digitalWrite(LEDDR,HIGH);
+  delay(5000);
+   digitalWrite(LEDAG,LOW);    //2.
+  digitalWrite(LEDBR,HIGH);
+  digitalWrite(LEDCR,HIGH);
+  digitalWrite(LEDDR,HIGH);
+  digitalWrite(LEDAY,HIGH);
+  delay(2000);
+   digitalWrite(LEDAY,LOW);
+  digitalWrite(LEDBR,LOW);     //3.
+  digitalWrite(LEDCR,HIGH);
+  digitalWrite(LEDDR,HIGH);
+  digitalWrite(LEDAR,HIGH);
+  digitalWrite(LEDBG,HIGH)
+  delay(2000);
+  digitalWrite(LEDBG,LOW) 
+  digitalWrite(LEDBR,LOW);     //4.
+  digitalWrite(LEDCR,HIGH);
+  digitalWrite(LEDDR,HIGH);
+  digitalWrite(LEDBY,HIGH);
+  digitalWrite(LEDAR,HIGH);
+  delay(2000);
+  digitalWrite(LEDAR,HIGH);
+  digitalWrite(LEDBR,HIGH);
+  digitalWrite(LEDBY,LOW);       //5.
+  digitalWrite(LEDCR,LOW);
+  digitalWrite(LEDCG,HIGH);
+  digitalWrite(LEDDR,HIGH);
+  delay(2000);
+  digitalWrite(LEDBR,HIGH);   
+  digitalWrite(LEDBG,LOW);
+  digitalWrite(LEDAR,HIGH);     //6.
+  digitalWrite(LEDCY,HIGH);
+  digitalWrite(LEDCG,LOW);
+  digitalWrite(LEDDR,HIGH);  
+delay(5000);
+  
+  digitalWrite(LEDAR,HIGH);
+  digitalWrite(LEDBR,LOW);
+  digitalWrite(LEDCY,LOW);     //7
+  digitalWrite(LEDCR,HIGH);
+  digitalWrite(LEDDR,LOW);
+  digitalWrite(LEDDG,HIGH);
+  delay(2000);
+   digitalWrite(LEDAR,HIGH);
+  digitalWrite(LEDBR,HIGH);     //8
+  digitalWrite(LEDCR,HIGH);
+  digitalWrite(LEDDY,HIGH);
+  digitalWrite(LEDDG,LOW);
+  delay(2000);
+}
+     

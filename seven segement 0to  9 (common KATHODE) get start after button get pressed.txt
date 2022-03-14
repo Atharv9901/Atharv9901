@@ -1,0 +1,112 @@
+ 
+const int LEDA=13;
+const int LEDB=12;
+const int LEDC=11;
+const int LEDD=10;
+const int LEDE=9;
+const int LEDF=8;
+const int LEDG=7;
+const int LEDZ=6;
+const int SWITCH=2;
+void setup()
+{
+  pinMode(SWITCH,INPUT);
+  pinMode(LEDA,OUTPUT);
+  pinMode(LEDB,OUTPUT);
+  pinMode(LEDC,OUTPUT);
+  pinMode(LEDD,OUTPUT);
+  pinMode(LEDE,OUTPUT);
+  pinMode(LEDF,OUTPUT);
+  pinMode(LEDG,OUTPUT);
+  pinMode(LEDZ,OUTPUT);
+  
+}
+void loop()
+{
+int x=digitalRead(SWITCH);  
+
+ if(x==HIGH)
+{
+  
+  digitalWrite(LEDA,HIGH);//0
+ digitalWrite(LEDB,HIGH);
+ digitalWrite(LEDC,HIGH);
+ digitalWrite(LEDD,HIGH);
+ digitalWrite(LEDE,HIGH);
+ digitalWrite(LEDF,HIGH);
+ digitalWrite(LEDG,LOW);
+delay(1000);
+ digitalWrite(LEDA,LOW);//1
+ digitalWrite(LEDB,HIGH);
+ digitalWrite(LEDC,HIGH);
+ digitalWrite(LEDD,LOW);
+ digitalWrite(LEDE,LOW);
+ digitalWrite(LEDF,LOW);
+  digitalWrite(LEDG,LOW);
+delay(1000);
+ digitalWrite(LEDA,HIGH);//2
+ digitalWrite(LEDB,HIGH);
+ digitalWrite(LEDC,LOW);
+ digitalWrite(LEDD,HIGH);
+ digitalWrite(LEDE,HIGH);
+ digitalWrite(LEDF,LOW);
+  digitalWrite(LEDG,HIGH);
+delay(1000);
+ digitalWrite(LEDA,HIGH);//3
+ digitalWrite(LEDB,HIGH);
+ digitalWrite(LEDC,HIGH);
+ digitalWrite(LEDD,HIGH);
+ digitalWrite(LEDE,LOW);
+ digitalWrite(LEDF,LOW);
+ digitalWrite(LEDG,HIGH);
+delay(1000);
+ digitalWrite(LEDA,LOW);//4
+ digitalWrite(LEDB,HIGH);
+ digitalWrite(LEDC,HIGH);
+ digitalWrite(LEDD,LOW);
+ digitalWrite(LEDE,LOW);
+ digitalWrite(LEDF,HIGH);
+ digitalWrite(LEDG,HIGH);
+delay(1000);
+ digitalWrite(LEDA,HIGH);//5
+ digitalWrite(LEDB,LOW);
+ digitalWrite(LEDC,HIGH);
+ digitalWrite(LEDD,HIGH);
+ digitalWrite(LEDE,LOW);
+ digitalWrite(LEDF,HIGH);
+  digitalWrite(LEDG,HIGH);
+delay(1000);
+ digitalWrite(LEDA,HIGH);//6
+ digitalWrite(LEDB,LOW);
+ digitalWrite(LEDC,HIGH);
+ digitalWrite(LEDD,HIGH);
+ digitalWrite(LEDE,HIGH);
+ digitalWrite(LEDF,HIGH);
+  digitalWrite(LEDG,HIGH);
+delay(1000);
+ digitalWrite(LEDA,HIGH);//7
+ digitalWrite(LEDB,HIGH);
+ digitalWrite(LEDC,HIGH);
+ digitalWrite(LEDD,LOW);
+ digitalWrite(LEDE,LOW);
+ digitalWrite(LEDF,LOW);
+  digitalWrite(LEDG,LOW);
+delay(1000);
+ digitalWrite(LEDA,HIGH);//8
+ digitalWrite(LEDB,HIGH);
+ digitalWrite(LEDC,HIGH);
+ digitalWrite(LEDD,HIGH);
+ digitalWrite(LEDE,HIGH);
+ digitalWrite(LEDF,HIGH);
+  digitalWrite(LEDG,HIGH);
+delay(1000);
+ digitalWrite(LEDA,HIGH);//9
+ digitalWrite(LEDB,HIGH);
+ digitalWrite(LEDC,HIGH);
+ digitalWrite(LEDD,HIGH);
+ digitalWrite(LEDE,LOW);
+ digitalWrite(LEDF,HIGH);
+  digitalWrite(LEDG,HIGH);
+delay(1000);
+}
+}
